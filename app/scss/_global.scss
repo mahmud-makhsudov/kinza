@@ -1,11 +1,18 @@
 html{
   box-sizing: border-box;
 }
-html,
-body{
-  position: relative;
-  overflow-x: hidden;
-}
+// body{
+//   font-family: 'Rubik', sans-serif;
+//   color: $black;
+//   font-size: 14px;
+//   line-height: 17px;
+//   font-weight: 400;
+// }
+// html,
+// body{
+//   position: relative;
+//   overflow-x: hidden;
+// }
 *,
 *::before,
 *::after{
@@ -21,3 +28,46 @@ li{
   padding: 0;
   list-style: none;
 }
+// .breadCrumbs{
+//   padding: 0 15px;
+// }
+// .breadCrumbs__item{
+//   display: inline-block;
+//   font-size: 9px;
+//   line-height: 12px;
+//   color: rgba(27, 27, 27, 0.3);
+//   position: relative;
+//   padding-right: 10px;
+//   margin-right: 3px;
+//   white-space: pre-line;
+//   &::after{
+//     content: "";
+//     position: absolute;
+//     right: 0;
+//     width: 6px;
+//     height: 1px;
+//     background-color: rgba(27, 27, 27, 0.3);
+//     top: 50%;
+//   }
+//   &:last-child{
+//     color: #1B1B1B;
+//     padding-right: 0;
+//     margin-right: 0;
+//     &::after{
+//       display: none;
+//     }
+//   }
+//   a{
+//     text-decoration: none;
+//   }
+// }
+// button{
+//   border: none;
+//   background-color: transparent;
+// }
+// details summary {
+//   display: block;
+// }
+// details summary::-webkit-details-marker {
+//   display: none;
+// }

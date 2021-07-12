@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#" class="header__logo">
+      Лого
+    </a>
+    <div class="header__content">
+      <div class="header__basket">
+        <span class="header__basket-text">Корзина</span>
+        <span class="header__basket-num">2</span>
+      </div>
+      <div class="header__menu">
+        <div class="header__menu-burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="back-btn">
+    <span>Назад</span>
+  </div>
+  <ul class="breadCrumbs">
+    <li class="breadCrumbs__item"><a href="#">Главная</a></li>
+    <li class="breadCrumbs__item"><a href="#">Одежда</a></li>
+    <li class="breadCrumbs__item"><a href="#">Пиджаки и куртки</a></li>
+    <li class="breadCrumbs__item"><span>Двубортный жакет оверсайз</span></li>
+  </ul>
+  <section class="product">
+    <div class="swiper-container product__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="product__slider-img" src="images/product-img.png" alt="img">
+        </div>
+        <div class="swiper-slide">
+          <img class="product__slider-img" src="images/product-img.png" alt="img">
+        </div>
+        <div class="swiper-slide">
+          <img class="product__slider-img" src="images/product-img.png" alt="img">
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-fraction"></div>
+    </div>
+    <div class="product__title">Двубортный жакет оверсайз, серый</div>
+    <div class="product__price">7 890 ₽</div>
+    <div class="product__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. At viverra cursus feugiat suspendisse nunc. Nascetur At
+      viverra
+      feugiat suspendisse nunc. Nascetur.
+    </div>
+    <div class="product__colors">
+      <div class="product-title">Цвета</div>
+      <div class="product__colors-inner">
+        <div class="product__color product__color-1"></div>
+        <div class="product__color product__color-2 active"></div>
+        <div class="product__color product__color-3"></div>
+      </div>
+    </div>
+    <div class="product__sizes">
+      <div class="product-title">Размер</div>
+      <div class="product__sizes-inner">
+        <div class="product__size"><span>S</span></div>
+        <div class="product__size active"><span>M</span></div>
+        <div class="product__size"><span>L</span></div>
+        <div class="product__size"><span>XL</span></div>
+      </div>
+    </div>
+    <div class="product__bottom">
+      <input type="number" class="product__bottom-quantity" value="1">
+      <button class="product__bottom-btn">В корзину</button>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__content">
+      <a href="#" class="header__logo footer__logo">
+        Лого
+      </a>
+      <div class="footer__items">
+        <div class="footer__line">
+          <a href="tel:88000000000" class="footer__phone">8 (800) 000-00-00</a>
+          <ul class="footer__contacts">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+          </ul>
+          <ul class="footer__social">
+            <li><a href="#"><img src="images/vk.svg" alt="img"></a></li>
+            <li><a href="#"><img src="images/insta.svg" alt="img"></a></li>
+            <li><a href="#"><img src="images/yt.svg" alt="img"></a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Новинки</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a href="#">Смотреть все</a></li>
+            <li class="footer__item-line"><a href="#">Одежда</a></li>
+            <li class="footer__item-line"><a href="#">Обувь</a></li>
+            <li class="footer__item-line"><a href="#">Аксессуары</a></li>
+            <li class="footer__item-line"><a href="#">Лицо и тело</a></li>
+            <li class="footer__item-line"><a href="#">Снова в наличи</a></li>
+            <li class="footer__item-line"><a href="#">Аутлет</a></li>
+            <li class="footer__item-line"><a href="#">ASOS DESIGN</a></li>
+            <li class="footer__item-line"><a href="#">Модели дома</a></li>
+            <li class="footer__item-line"><a href="#">Модно в этом сезоне</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Бренды</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a href="#">Givenchy</a></li>
+            <li class="footer__item-line"><a href="#">Heron Preston</a></li>
+            <li class="footer__item-line"><a href="#">John Elliot</a></li>
+            <li class="footer__item-line"><a href="#">Kenzo</a></li>
+            <li class="footer__item-line"><a href="#">Maison Kitsune</a></li>
+            <li class="footer__item-line"><a href="#">Maison Margiela</a></li>
+            <li class="footer__item-line"><a href="#">MKI Miyuki-Zoku</a></li>
+            <li class="footer__item-line"><a href="#">Neighborhood</a></li>
+            <li class="footer__item-line"><a href="#">New Balance</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Одежда</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a href="#">Верхняя одежда</a></li>
+            <li class="footer__item-line"><a href="#">Пиджаки и куртки</a></li>
+            <li class="footer__item-line"><a href="#">Трикотаж</a></li>
+            <li class="footer__item-line"><a href="#">Рубашки и поло</a></li>
+            <li class="footer__item-line"><a href="#">Футболки и лонгсливы</a></li>
+            <li class="footer__item-line"><a href="#">Свитшоты и худи</a></li>
+            <li class="footer__item-line"><a href="#">Брюки и джинсы</a></li>
+            <li class="footer__item-line"><a href="#">Шорты</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Обувь</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a href="#">Сандалии</a></li>
+            <li class="footer__item-line"><a href="#">Ботинки и сапоги</a></li>
+            <li class="footer__item-line"><a href="#">Кроссовки и кеды</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Распродажа</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a class="exclusion" href="#">Посмотреть все скидки</a></li>
+            <li class="footer__item-line"><a href="#">Скидки на одежду</a></li>
+            <li class="footer__item-line"><a href="#">Чулочно-носочные изделия</a></li>
+            <li class="footer__item-line"><a href="#">Топы и футболки</a></li>
+            <li class="footer__item-line"><a href="#">Скидки на обувь</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <ul class="payment">
+        <li class="payment__item"><a href="#"><img src="images/yandex.png" alt="img"></a></li>
+        <li class="payment__item"><a href="#"><img src="images/visa.png" alt="img"></a></li>
+        <li class="payment__item"><a href="#"><img src="images/mastercard.png" alt="img"></a></li>
+        <li class="payment__item"><a href="#"><img src="images/mir-logo.png" alt="img"></a></li>
+      </ul>
+      <div class="footer__copy">© 2020 Название магазина</div>
+      <a href="#" class="footer__politics">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

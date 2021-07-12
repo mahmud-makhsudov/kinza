@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#" class="header__logo">
+      Лого
+    </a>
+    <div class="header__content">
+      <div class="header__basket">
+        <span class="header__basket-text">Корзина</span>
+        <span class="header__basket-num">2</span>
+      </div>
+      <div class="header__menu">
+        <div class="header__menu-burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="back-btn">
+    <span>Назад</span>
+  </div>
+  <div class="pay-title">Оформление заказа</div>
+  
+  <div class="pay">
+    <div class="pay__step">Шаг 1 из 3</div>
+    <div class="pay__title">Адрес доставки</div>
+    <div class="pay__item">
+      <div class="pay__item-title">Контактная информация</div>
+      <div class="pay__item-line">
+        <input placeholder="Получатель" class="pay__item-input" type="text">
+      </div>
+      <div class="pay__item-line pay__item-phone">
+        <input value="+7" class="pay__item-input" type="text">
+        <input placeholder="Номер мобильного" class="pay__item-input" type="text">
+      </div>
+    </div>
+    <div class="pay__item">
+      <div class="pay__item-title">Контактная информация</div>
+      <div class="pay__item-line">
+        <input placeholder="Область" class="pay__item-input" type="text">
+      </div>
+      <div class="pay__item-line">
+        <input placeholder="Город" class="pay__item-input" type="text">
+      </div>
+      <div class="pay__item-line">
+        <input placeholder="Улица" class="pay__item-input" type="text">
+      </div>
+      <div class="pay__item-line">
+        <input placeholder="Дом" class="pay__item-input pay__item-adres" type="text">
+        <input placeholder="Кв." class="pay__item-input pay__item-adres" type="text">
+        <input placeholder="Почтовый индекс" class="pay__item-input" type="text">
+      </div>
+    </div>
+  </div>
+  <div class="pay">
+    <div class="pay__step">Шаг 2 из 3</div>
+    <div class="pay__title">Способы оплаты</div>
+    <div class="pay__tabs">
+      <div class="pay__tabs-btns">
+        <div class="pay__tabs-btn active" data-tab="#tab_1">
+          <div class="pay__tabs-title">Карта</div>
+          <ul class="pay__tabs-list">
+            <li class="pay__tabs-line"><img src="images/visa.svg" alt="img"></li>
+            <li class="pay__tabs-line"><img src="images/mastercard.svg" alt="img"></li>
+            <li class="pay__tabs-line"><img src="images/mir-logo.svg" alt="img"></li>
+          </ul>
+        </div>
+        <div class="pay__tabs-btn" data-tab="#tab_2">
+          <img src="images/yandex.png" alt="img">
+        </div>
+      </div>
+      <div class="pay__tabs-content active" id="tab_1">
+        <div class="card card-1">
+          <div class="card__line">
+            <label class="card__line-label">Номер карты</label>
+            <input type="text" class="card__line-input" placeholder="0000 0000 0000 0000">
+          </div>
+          <div class="card__item">
+            <div class="card__line">
+              <label class="card__line-label">Держатель карты</label>
+              <input type="text" class="card__line-input" placeholder="ФАМИЛИЯ И ИМЯ">
+            </div>
+            <div class="card__line card__line-term">
+              <label class="card__line-label">Срок действия</label>
+              <input type="text" class="card__line-input" placeholder="ММ/ГГ">
+            </div>
+          </div>
+        </div>
+        <div class="card card-2">
+          <div class="card__bg"></div>
+          <div class="card__line card-2__line">
+            <label class="card__line-label">CVV</label>
+            <input type="text" class="card__line-input" placeholder="000">
+          </div>
+        </div>
+      </div>
+      <div class="pay__tabs-content" id="tab_2">
+        <div class="yandex-text">
+          После нажатия на кнопку ”Оформить заказ”, вы перенаправляетесь на сайт Yandex. Money для завершения платежа 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pay step-3">
+    <div class="pay__step">Шаг 3 из 3</div>
+    <div class="pay__title">Состав заказа</div>
+    <div class="pay-orders">
+      <div class="pay-order">
+        <img class="pay-order__img" src="images/product-img.png" alt="img">
+        <div class="pay-order__content">
+          <div class="pay-order__name">Двубортный жакет оверсайз</div>
+          <div class="pay-order__line">
+            <span class="pay-order__line-text">Цвет:</span>
+            <div class="pay-order__line-color"></div>
+          </div>
+          <div class="pay-order__line">
+            <span class="pay-order__line-text">Размер:</span>
+            <span class="pay-order__line-value">M</span>
+          </div>
+          <div class="pay-order__cost">7 890 ₽</div>
+        </div>
+      </div>
+      <div class="pay-order">
+        <img class="pay-order__img" src="images/product-img.png" alt="img">
+        <div class="pay-order__content">
+          <div class="pay-order__name">Двубортный жакет оверсайз</div>
+          <div class="pay-order__line">
+            <span class="pay-order__line-text">Цвет:</span>
+            <span class="pay-order__line-color"></span>
+          </div>
+          <div class="pay-order__line">
+            <span class="pay-order__line-text">Размер:</span>
+            <span class="pay-order__line-value">M</span>
+          </div>
+          <div class="pay-order__cost">7 890 ₽</div>
+        </div>
+      </div>
+    </div>
+    <div class="pay-bottom">
+      <div class="pay-bottom__promo">Промокод</div>
+      <div class="pay-bottom__line">
+        <input type="text" class="pay-bottom__line-input">
+        <button class="pay-bottom__line-btn">Применить</button>
+      </div>
+      <div class="pay-bottom__sum">
+        <div class="pay-bottom__sum-text">Сумма заказа</div>
+        <div class="pay-bottom__sum-num">15 780 ₽</div>
+      </div>
+      <button class="pay-bottom__sum-btn">Оформить заказ</button>
+      <div class="pay-bottom__copy">Нажимая кнопку “Оформить заказ”,
+        вы соглашаетесь с <a href="#">политикой конфиденциальности.</a></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <a href="#" class="header__logo footer__logo">
+        Лого
+      </a>
+      <div class="footer__items">
+        <div class="footer__line">
+          <a href="tel:88000000000" class="footer__phone">8 (800) 000-00-00</a>
+          <ul class="footer__contacts">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+          </ul>
+          <ul class="footer__social">
+            <li><a href="#"><img src="images/vk.svg" alt="img"></a></li>
+            <li><a href="#"><img src="images/insta.svg" alt="img"></a></li>
+            <li><a href="#"><img src="images/yt.svg" alt="img"></a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Новинки</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a href="#">Смотреть все</a></li>
+            <li class="footer__item-line"><a href="#">Одежда</a></li>
+            <li class="footer__item-line"><a href="#">Обувь</a></li>
+            <li class="footer__item-line"><a href="#">Аксессуары</a></li>
+            <li class="footer__item-line"><a href="#">Лицо и тело</a></li>
+            <li class="footer__item-line"><a href="#">Снова в наличи</a></li>
+            <li class="footer__item-line"><a href="#">Аутлет</a></li>
+            <li class="footer__item-line"><a href="#">ASOS DESIGN</a></li>
+            <li class="footer__item-line"><a href="#">Модели дома</a></li>
+            <li class="footer__item-line"><a href="#">Модно в этом сезоне</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Бренды</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a href="#">Givenchy</a></li>
+            <li class="footer__item-line"><a href="#">Heron Preston</a></li>
+            <li class="footer__item-line"><a href="#">John Elliot</a></li>
+            <li class="footer__item-line"><a href="#">Kenzo</a></li>
+            <li class="footer__item-line"><a href="#">Maison Kitsune</a></li>
+            <li class="footer__item-line"><a href="#">Maison Margiela</a></li>
+            <li class="footer__item-line"><a href="#">MKI Miyuki-Zoku</a></li>
+            <li class="footer__item-line"><a href="#">Neighborhood</a></li>
+            <li class="footer__item-line"><a href="#">New Balance</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Одежда</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a href="#">Верхняя одежда</a></li>
+            <li class="footer__item-line"><a href="#">Пиджаки и куртки</a></li>
+            <li class="footer__item-line"><a href="#">Трикотаж</a></li>
+            <li class="footer__item-line"><a href="#">Рубашки и поло</a></li>
+            <li class="footer__item-line"><a href="#">Футболки и лонгсливы</a></li>
+            <li class="footer__item-line"><a href="#">Свитшоты и худи</a></li>
+            <li class="footer__item-line"><a href="#">Брюки и джинсы</a></li>
+            <li class="footer__item-line"><a href="#">Шорты</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Обувь</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a href="#">Сандалии</a></li>
+            <li class="footer__item-line"><a href="#">Ботинки и сапоги</a></li>
+            <li class="footer__item-line"><a href="#">Кроссовки и кеды</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">Распродажа</div>
+          <ul class="footer__item-list">
+            <li class="footer__item-line"><a class="exclusion" href="#">Посмотреть все скидки</a></li>
+            <li class="footer__item-line"><a href="#">Скидки на одежду</a></li>
+            <li class="footer__item-line"><a href="#">Чулочно-носочные изделия</a></li>
+            <li class="footer__item-line"><a href="#">Топы и футболки</a></li>
+            <li class="footer__item-line"><a href="#">Скидки на обувь</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <ul class="payment">
+        <li class="payment__item"><a href="#"><img src="images/yandex.png" alt="img"></a></li>
+        <li class="payment__item"><a href="#"><img src="images/visa.png" alt="img"></a></li>
+        <li class="payment__item"><a href="#"><img src="images/mastercard.png" alt="img"></a></li>
+        <li class="payment__item"><a href="#"><img src="images/mir-logo.png" alt="img"></a></li>
+      </ul>
+      <div class="footer__copy">© 2020 Название магазина</div>
+      <a href="#" class="footer__politics">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
